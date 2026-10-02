@@ -1,0 +1,544 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f7fb;
+    color: #202633;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    min-height: 72px;
+}
+
+.navbar-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-text strong {
+    font-size: 16px;
+}
+
+.brand-text small {
+    color: #8a93a2;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.profile-btn {
+    border: 1px solid #e5e8ee;
+    background: #fff;
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+
+.profile-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #eef2f7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main-content {
+    padding-top: 105px;
+    padding-bottom: 40px;
+}
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e9edf3;
+    margin-bottom: 28px;
+}
+
+.welcome-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6f7a8a;
+    letter-spacing: 1px;
+}
+
+.welcome-card h2 {
+    margin: 7px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.welcome-card p {
+    margin: 0;
+    color: #7b8493;
+}
+
+.date-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 15px;
+    border-radius: 12px;
+    background: #f6f8fb;
+    color: #596474;
+    font-size: 14px;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    margin-bottom: 14px;
+}
+
+.small-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #929baa;
+}
+
+.section-title h4 {
+    margin: 3px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* =========================
+   ATTENDANCE CARD
+========================= */
+
+.attendance-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #e8ecf2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 160px;
+}
+
+.attendance-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.masuk .attendance-icon {
+    background: #eaf7ef;
+    color: #219653;
+}
+
+.pulang .attendance-icon {
+    background: #fff0f0;
+    color: #dc3545;
+}
+
+.attendance-info {
+    flex: 1;
+}
+
+.attendance-info > span {
+    font-size: 11px;
+    color: #8b94a3;
+    font-weight: 700;
+    letter-spacing: .7px;
+}
+
+.attendance-info h3 {
+    margin: 5px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.attendance-info small {
+    color: #8a93a2;
+}
+
+.status-success {
+    color: #219653 !important;
+}
+
+.btn-absen {
+    border: none;
+    border-radius: 10px;
+    padding: 9px 13px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.btn-masuk {
+    background: #219653;
+    color: #fff;
+}
+
+.btn-masuk:hover {
+    background: #197c43;
+    color: #fff;
+}
+
+.btn-pulang {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-pulang:hover {
+    background: #bb2d3b;
+    color: #fff;
+}
+
+/* =========================
+   SCHEDULE
+========================= */
+
+.schedule-card {
+    background: #ffffff;
+    border: 1px solid #e8ecf2;
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.schedule-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    background: #f0f3f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #596474;
+}
+
+.schedule-info span {
+    color: #929baa;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.schedule-info h3 {
+    margin: 4px 0;
+    font-size: 23px;
+}
+
+.schedule-info p {
+    margin: 0;
+    color: #7d8796;
+    font-size: 13px;
+}
+
+.schedule-info p i {
+    color: #219653;
+}
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-card {
+    background: #fff;
+    border: 1px solid #e8ecf2;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.history-item {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-date {
+    width: 48px;
+    height: 52px;
+    background: #f4f6f9;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.history-date strong {
+    font-size: 17px;
+}
+
+.history-date span {
+    font-size: 10px;
+    color: #8992a0;
+}
+
+.history-detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-detail strong {
+    font-size: 14px;
+}
+
+.history-detail span {
+    font-size: 12px;
+    color: #8a93a2;
+    margin-top: 3px;
+}
+
+.status-badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-hadir {
+    background: #e8f7ef;
+    color: #219653;
+}
+
+.badge-terlambat {
+    background: #fff3df;
+    color: #d88900;
+}
+
+.badge-izin {
+    background: #eaf2ff;
+    color: #3578e5;
+}
+
+.badge-sakit {
+    background: #f0eaff;
+    color: #7357c7;
+}
+
+.badge-default {
+    background: #eef0f3;
+    color: #687180;
+}
+
+.lihat-semua {
+    text-decoration: none;
+    color: #596474;
+    font-size: 13px;
+}
+
+.lihat-semua:hover {
+    color: #212529;
+}
+
+.empty-history {
+    text-align: center;
+    padding: 40px 20px;
+    color: #929baa;
+}
+
+.empty-history i {
+    font-size: 35px;
+}
+
+.empty-history p {
+    margin: 8px 0 0;
+}
+
+/* =========================
+   QUICK MENU
+========================= */
+
+.quick-menu {
+    background: #ffffff;
+    border: 1px solid #e8ecf2;
+    border-radius: 17px;
+    min-height: 115px;
+    text-decoration: none;
+    color: #27303d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    transition: .2s;
+}
+
+.quick-menu:hover {
+    transform: translateY(-3px);
+    color: #212529;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+}
+
+.quick-menu div {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background: #f1f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.quick-menu span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* =========================
+   MOBILE BOTTOM NAV
+========================= */
+
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    background: #ffffff;
+    border-top: 1px solid #e8ecf2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.mobile-bottom-nav a {
+    text-decoration: none;
+    color: #8992a0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+}
+
+.mobile-bottom-nav a i {
+    font-size: 19px;
+}
+
+.mobile-bottom-nav a.active {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+    .main-content {
+        padding-top: 92px;
+        padding-bottom: 90px;
+    }
+
+    .welcome-card {
+        padding: 20px;
+        display: block;
+    }
+
+    .welcome-card h2 {
+        font-size: 21px;
+    }
+
+    .welcome-card p {
+        font-size: 13px;
+    }
+
+    .date-box {
+        display: inline-flex;
+        margin-top: 15px;
+    }
+
+    .attendance-card {
+        min-height: 145px;
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+
+    .attendance-info {
+        min-width: 150px;
+    }
+
+    .attendance-info h3 {
+        font-size: 22px;
+    }
+
+    .btn-absen {
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .schedule-card {
+        padding: 18px;
+    }
+
+    .schedule-info h3 {
+        font-size: 20px;
+    }
+
+    .history-item {
+        padding: 14px;
+        gap: 10px;
+    }
+
+    .history-detail span {
+        font-size: 10px;
+    }
+
+    .status-badge {
+        font-size: 9px;
+        padding: 5px 7px;
+    }
+
+    .brand-text small {
+        display: none;
+    }
+
+}
